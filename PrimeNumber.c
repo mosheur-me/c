@@ -14,7 +14,13 @@ int main()
     if(n>1)
     {
       for(i=2;n<(i/2);i++)
-        
+      {
+        temp = n%i;
+        if(temp==0)
+          break;
+      }
+      if(temp==0) printf("%d is not a prime number",n);
+      else printf("%d is a prime number",n);
     }
     else
     {
